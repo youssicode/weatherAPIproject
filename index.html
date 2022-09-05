@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./frontSrc/style.css">
     <title>Weather Application</title>
 </head>
 <body>
-    <h1>Weather Application Using openWeatherMap API</h1>
+    <h1>The Weather In World's Capitals </h1>
+    <em>A weather application: fetching weather data from "OpenWeatherMap" API</em>
+
+    <div class="container">
+
+        <form action="/" method="post">
+            <div class="capitals-list">
+            <label for="city">Choose a city:</label>
+            <select name="city" id="city">
+                <option value="">--Please choose a city--</option>
+                <option value="rabat">- Rabat</option>
+                <option value="ottawa">- Ottawa</option>
+                <option value="brasilia">- Brasilia</option>
+                <option value="	Cairo">- Cairo</option>
+                <option value="berlin">- Berlin</option>
+                <option value="stockholm">- Stockholm</option>
+            </select>
+        </div>
+        <div class="units-list">
+            <label for="unit">Choose a unit:</label>
+            <select name="unit" id="unit">
+                <option value="">--Please choose a unit--</option>
+                <option value="metric">- Metric (°C)</option>
+                <option value="imperial">- Imperial (°F)</option>
+            </select>
+        </div>
+        <input type="submit" value="Go">
+    </form>
+    <p class="city-holder"></p>
+    <p class="temp-holder"></p>
+    <p class="unit--holder"></p>
+    <p class="desc-holder"></p>
+    <p class="icon-holder"></p>
+    
+</div>
+    
+
+    <script src="./frontSrc/script.js"></script>
 </body>
 </html>
