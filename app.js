@@ -1,4 +1,3 @@
-const port = 8200
 const fetch = require('node-fetch')
 const express = require("express")
 const app = express()
@@ -6,6 +5,7 @@ app.use(express.static(__dirname))
 const bodyParser = require("body-parser")
 app.use(bodyParser.urlencoded({ extended: true }))
 
+const port = 8200
 app.listen(port, function() {
     console.log("Weather Project Server running on port: " + port)
  })
@@ -31,7 +31,7 @@ app.post("/", function(req, res) {
 })
 
 app.get("/result", function (req, res) {
-    res.send(APIdata)
+    res.json(APIdata)
 })
 
 
