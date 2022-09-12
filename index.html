@@ -13,7 +13,7 @@
 
     <div class="container">
         <img src="./frontSrc/images/bg-weather.jpg" class="bg">
-        <form action="/" method="post">
+        <form action="/result" method="post">
             <div class="capitals-list">
             <label for="city">Choose a city:</label>
             <select name="city" id="city">
@@ -34,7 +34,7 @@
                 <option value="imperial">- Imperial (°F)</option>
             </select>
         </div>
-        <input type="submit" value="Go">
+        <input class="go" type="submit" value="Go">
     </form>
     <p>city: <span class="city-holder"></span></p>
     <p>Temperature: <span class="temp-holder"></span></p>
