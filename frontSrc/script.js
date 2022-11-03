@@ -20,7 +20,5 @@ myForm[0].onsubmit = function () {
                 iconHolder.setAttribute("src", `http://openweathermap.org/img/wn/${jased.weather[0].icon}@2x.png`)
             })
         }
-    })
-    
-        
+    }) 
 }
